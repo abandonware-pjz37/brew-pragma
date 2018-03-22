@@ -12,9 +12,13 @@ if(NOT try_compile_result)
   message(FATAL_ERROR "Compilation failed")
 endif()
 
-string(REGEX REPLACE ".*BEGIN_(.*)_END.*" "\\1" outresult "${outresult}")
-
-message("Pragma message: ${outresult}")
+string(REGEX REPLACE ".*BEGIN_(.*)_END.*" "\\1" new_outresult "${outresult}")
+string(COMPARE EQUAL "${new_outresult}" "${outresult}" nothing)
+if(nothing)
+  message("No pragma messages found")
+else()
+  message("Pragma message: ${new_outresult}")
+endif()
 
 add_custom_target(
     cccfg
