@@ -4,11 +4,11 @@ class BrewPragma < Formula
   version '0.0.1'
 
   homepage 'https://github.com/forexample/brew-pragma'
-  url 'https://github.com/forexample/brew-pragma.git', :branch => 'master'
+  url 'https://github.com/forexample/brew-pragma.git', :branch => 'force'
 
   devel do
     version '0.0.1'
-    url 'https://github.com/forexample/brew-pragma.git', :branch => 'master'
+    url 'https://github.com/forexample/brew-pragma.git', :branch => 'force'
   end
 
   depends_on 'cmake' => :build
