@@ -1,3 +1,5 @@
+See https://discourse.brew.sh/t/c-homebrew-compiler-suppress-pragma-messages/1893
+
 Building without Homebrew
 -------------------------
 
